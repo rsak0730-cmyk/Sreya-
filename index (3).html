@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffdeed">
+  <title>শ্রেয়ার ম্যাজিক্যাল জন্মদিন 🧸💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Baloo+Da+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <span class="cloud cloud-a"></span><span class="cloud cloud-b"></span>
+    <span class="star s1">✦</span><span class="star s2">✧</span><span class="star s3">✦</span>
+    <span class="star s4">✧</span><span class="star s5">✦</span>
+  </div>
+  <div id="confetti-layer" aria-hidden="true"></div>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">♡</span><span>স্রেয়ার জন্য</span></div>
+      <button id="music-toggle" class="music-btn" type="button" aria-pressed="false">♫ <span id="music-label">জন্মদিনের গান চালাও</span></button>
+    </header>
+
+    <section class="hero panel">
+      <div class="eyebrow"><span class="pulse-dot"></span> আজকের দিনটা শুধু তোমার</div>
+      <h1>শুভ জন্মদিন,<br><span class="name-gradient">শ্রেয়া!</span> 🎂</h1>
+      <p class="subtitle">একটা ছোট্ট ম্যাজিক্যাল জগৎ, শুধু তোমার হাসির জন্য।</p>
+
+      <div class="scene" id="scene">
+        <div class="moon"></div>
+        <div class="floating-heart fh1">💗</div><div class="floating-heart fh2">💖</div>
+        <div class="floating-heart fh3">💕</div><div class="floating-heart fh4">✨</div>
+        <div class="balloon balloon1"><span></span></div><div class="balloon balloon2"><span></span></div>
+        <div class="balloon balloon3"><span></span></div>
+        <div class="teddy-wrap" id="teddy" role="button" tabindex="0" aria-label="টেডিকে ট্যাপ করো">
+          <div class="teddy-ear ear-left"></div><div class="teddy-ear ear-right"></div>
+          <div class="teddy-body"></div>
+          <div class="teddy-arm arm-left"></div><div class="teddy-arm arm-right"></div>
+          <div class="teddy-leg leg-left"></div><div class="teddy-leg leg-right"></div>
+          <div class="teddy-head">
+            <div class="teddy-patch"></div>
+            <div class="eye eye-left"></div><div class="eye eye-right"></div>
+            <div class="cheek cheek-left"></div><div class="cheek cheek-right"></div>
+            <div class="muzzle"><div class="nose"></div><div class="smile"></div></div>
+            <div class="bow"><i></i><i></i><b></b></div>
+          </div>
+          <div class="heart-badge">♥</div>
+        </div>
+        <div class="cake" aria-label="জন্মদিনের কেক">
+          <div class="candle"><i></i></div><div class="icing"></div>
+          <div class="cake-top"></div><div class="cake-bottom"></div>
+          <div class="cake-decor">♥ ♥ ♥</div>
+        </div>
+        <div class="ground"></div>
+        <div class="tap-hint">🧸 টেডিকে ট্যাপ করো!</div>
+      </div>
+
+      <div class="hero-actions">
+        <button class="primary-btn" id="open-gift" type="button">🎁 সারপ্রাইজ খোলো</button>
+        <button class="soft-btn" id="sprinkle" type="button">✨ ম্যাজিক ছড়াও</button>
+      </div>
+      <p id="teddy-message" class="tiny-message" aria-live="polite">টেডি তোমাকে একটা জড়িয়ে ধরার অপেক্ষায় আছে!</p>
+    </section>
+
+    <section id="surprise" class="panel surprise-panel" hidden>
+      <div class="section-kicker">💌 তোমার জন্য ছোট্ট চিঠি</div>
+      <h2>একটু মন দিয়ে পড়ো, শ্রেয়া…</h2>
+      <div class="letter">
+        <div class="letter-stamp">💗</div>
+        <p>প্রিয় শ্রেয়া,</p>
+        <p>তোমার জীবনের প্রতিটা দিন যেন আজকের মতোই রঙিন, মিষ্টি আর হাসিতে ভরা হয়। তোমার সব ছোট-বড় স্বপ্ন সত্যি হোক, মন খারাপের দিনগুলো দূরে চলে যাক, আর তোমার পাশে সবসময় থাকুক ভালোবাসার মানুষগুলো।</p>
+        <p>তুমি যেমন সুন্দর করে হাসো, তেমনই সবসময় হাসতে থেকো। আজকের দিনটা তোমার—অনেক আদর, অনেক ভালোবাসা আর এক আকাশ শুভেচ্ছা! 🌷</p>
+        <p class="sign">অনেক ভালোবাসা নিয়ে,<br><strong>তোমার আপনজন 💝</strong></p>
+      </div>
+      <div class="hero-actions">
+        <button id="show-wish" class="primary-btn" type="button">💖 আরও একটা চমক</button>
+        <button id="copy-wish" class="soft-btn" type="button">📋 শুভেচ্ছা কপি করো</button>
+      </div>
+      <p id="copy-status" class="status" aria-live="polite"></p>
+    </section>
+
+    <section id="wish-card" class="panel wish-panel" hidden>
+      <div class="sparkle-big">✧</div>
+      <div class="section-kicker">🌟 তোমার জন্য একটা ইচ্ছে</div>
+      <h2>শ্রেয়ার জন্য আজকের ইচ্ছে</h2>
+      <p id="wish-text">তোমার প্রতিটা সকাল নতুন আশা নিয়ে আসুক, আর প্রতিটা রাত শান্তি আর খুশিতে ভরে উঠুক।</p>
+      <button id="new-wish" class="soft-btn" type="button">🔮 আরেকটা ইচ্ছে দেখো</button>
+    </section>
+
+    <section class="panel mini-game">
+      <div class="section-kicker">🎀 ছোট্ট একটা খেলা</div>
+      <h2>টেডির জন্য হার্ট খুঁজে দাও!</h2>
+      <p>নিচের তিনটি বাক্সের মধ্যে একটিতে লুকিয়ে আছে গোলাপি হার্ট। ঠিকটা বেছে নাও!</p>
+      <div class="heart-boxes" role="group" aria-label="হার্ট খুঁজে বের করার বাক্স">
+        <button class="heart-box" data-box="0" type="button" aria-label="প্রথম বাক্স">🎁</button>
+        <button class="heart-box" data-box="1" type="button" aria-label="দ্বিতীয় বাক্স">🎁</button>
+        <button class="heart-box" data-box="2" type="button" aria-label="তৃতীয় বাক্স">🎁</button>
+      </div>
+      <p id="game-status" class="game-status" aria-live="polite">একটা বাক্স বেছে নাও, শ্রেয়া 💕</p>
+      <button id="reset-game" class="text-btn" type="button">আবার খেলি ↻</button>
+    </section>
+
+    <section class="panel note-panel">
+      <div class="section-kicker">📝 নিজের মতো করে</div>
+      <h2>একটা ব্যক্তিগত বার্তা লিখো</h2>
+      <p>এই বাক্সে নিজের পছন্দমতো বার্তা লিখে কপি করতে পারো।</p>
+      <textarea id="personal-note" rows="3" maxlength="350" placeholder="শ্রেয়ার জন্য তোমার নিজের বার্তা লিখো…"></textarea>
+      <div class="note-actions">
+        <button id="save-note" class="soft-btn" type="button">💾 এই পেজে রাখো</button>
+        <button id="copy-note" class="primary-btn" type="button">📋 কপি করো</button>
+      </div>
+      <p id="note-status" class="status" aria-live="polite"></p>
+    </section>
+
+    <footer>তোমার হাসির মতোই মিষ্টি হোক পুরো বছরটা 🧸💗<br><span>ভালোবাসা দিয়ে বানানো, শুধু শ্রেয়ার জন্য।</span><br><small>সুরের সৌজন্য: Alexander — Orange Free Sounds (CC BY 4.0)</small></footer>
+  </main>
+
+  <audio id="birthday-song" autoplay loop preload="auto" aria-label="জন্মদিনের ব্যাকগ্রাউন্ড মিউজিক">
+    <source src="https://www.orangefreesounds.com/wp-content/uploads/2016/08/Happy-birthday-instrumental.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
